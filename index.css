@@ -10,8 +10,24 @@
     --black-number-one:  rgba(0,0,0,.9);
 
 }
+
 /* ELEMENTS */
+body {
+    background-color: rgb(213, 213, 195);
+}
+/* CLASSES */
 .main-container {
     background-color: beige;
 }
 /* IDS */
+#gameboard {
+    width: 500;
+    height: 500;
+    margin: 5rem;
+    border: 15px solid var(--black-number-one);
+    background: white;
+    border-radius: 1rem;
+}
+.start-over {
+    margin: 1rem;
+}

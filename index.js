@@ -4,7 +4,7 @@
      will need to know if goes over other dots
      
  */
-var c = document.getElementById("canvas");
+var c = document.getElementById("gameboard");
 var ctx = c.getContext("2d");
 let firstClickX = 0;
 let firstClickY = 0;
@@ -35,12 +35,12 @@ function getMousePositionTwo(canvas, event) {
     console.log("Coordinate x: " + x, "Coordinate y: " + y);
     drawLine(ctx, [firstClickX, firstClickY], [x, y], 'red', 3);
 }
-let canvasElem = document.querySelector("canvas");
-canvasElem.addEventListener("mousedown", function (e) {
-    getMousePositionOne(canvasElem, e);
+
+c.addEventListener("mousedown", function (e) {
+    getMousePositionOne(c, e);
 });
-canvasElem.addEventListener("mouseup", function (e) {
-    getMousePositionTwo(canvasElem, e);
+c.addEventListener("mouseup", function (e) {
+    getMousePositionTwo(c, e);
     firstClickX = 0;
     firstClickY = 0;
 });
