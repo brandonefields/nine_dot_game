@@ -1,0 +1,17 @@
+/* root */
+:root {
+    --green-number-one: rgb(1, 102, 79);
+    --pink-number-one:  rgb(252, 1, 192);
+    --grey-number-one:  rgb(200, 214, 212);
+    --grey-number-two:  rgb(231 231 231);
+    --grey-number-three:  rgb(233, 236, 239);
+    --grey-number-four:  rgb(44, 52, 51);
+    --purple-number-one:  rgb(159, 40, 148);
+    --black-number-one:  rgba(0,0,0,.9);
+
+}
+/* ELEMENTS */
+.main-container {
+    background-color: beige;
+}
+/* IDS */
